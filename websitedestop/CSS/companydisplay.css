@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+.PicCenter{
+	width:100%;
+	display:block;
+}
+.PicCenter h2,.PicCenter p{
+	text-align:center;
+}
+.PicCenter img{
+	float:center;
+	display:block;
+	margin:0 30% 0 30%;
+}
+.Content h1{
+float:center;
+margin:0 0% 0 20%;
+}
+.Contentext{
+	width:60%
+	/*border:rgba(51,51,51,1) 1px solid;*/
+}
+.Contentimg{
+	width:40%;
+}
+
+.PicText{
+	display:block;
+}
+.PicText .col-md-7 img{
+	border:#0C0 thin solid;
+}
+.PicText .col-md-7 p{
+	border:#903 thin solid;
+	vertical-align:text-bottom;
+	float:left;
+}
+#PicLeft{
+	dispaly:block;
+}
+#PicLeft img{
+	float:left;
+	margin:0;
+	width:50%;
+}
+#PicLeft p{
+	float:left;
+	display:inline-block;
+	word-wrap: break-word;
+	word-break:normal;
+	border:rgba(0,102,204,1) thin solid;
+	width:50%;
+}

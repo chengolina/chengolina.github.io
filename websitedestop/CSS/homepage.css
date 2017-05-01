@@ -1,0 +1,736 @@
+@charset "utf-8";
+/* CSS Document */
+/*HomePage Html CSS*/
+body,div,ul,li,a,img{margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
+ul,ol,li{list-style:none;}
+a,a:hover,a:focus{text-decoration:none;}
+h1{
+	font-family:'BroadWay';
+	font-size:38px;
+	color:rgba(153,153,153,1);
+	padding-top:0px;
+	padding-bottom:5px;
+}
+h2{
+	font-family:'Castellar';
+	font-size:24px;
+}
+h3{
+	font-family:'SwisNormal';
+	font-size:16px;
+}
+h4{
+	font-family:'SwisLight';
+	font-size:16px;
+	margin:5px auto 5px 5px;
+}
+h5{
+	font-family:'SwisNormal';
+	font-size:16px;
+}
+p,a{
+	font-family:'SwisLight';
+	font-size:16px;
+	color:rgba(153,153,153,1);
+}
+h6{
+	font-family:'SwisLight';
+	font-size:16px;
+	color:white;
+	background:linear-gradient(left,rgba(204,204,204,0),rgba(0,0,0,1),rgba(204,204,204,0));
+background:
+	-moz-linear-gradient(left,rgba(204,204,204,0),rgba(0,0,0,1),rgb(204,204,204,0));
+background:
+	-webkit-linear-gradient(left,rgba(204,204,204,0),rgba(0,0,0,1),rgba(204,204,204,0));
+	padding:10px 15px;
+	width:100%;
+}
+body{
+	display:block;
+	width:100%;
+	/*background:url(../../images/arches.png) repeat top left;*/
+}
+
+/*Menlist include logo insert*/
+
+.LogoInsert{
+	display:inline-block;
+	top:0px;
+	position:absolute;
+}
+
+.Menu{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:15%;
+	
+}
+.Menu li {
+	font-size:16px;
+	list-style-type: none;
+	display:inline-block;
+	vertical-align:top;
+		
+}
+.Menu li a{
+	font-family:'SwisNormal';
+	font-size:16px;
+	display:block;	
+	color:#3e3e40;
+	padding:10px 15px;
+	
+}
+#prev, #next{
+	cursor:pointer;
+	z-index:30;
+	margin:auto;
+	position:absolute;
+	opacity:1;
+	filter:alpha(opacity=1);
+}
+#prev{
+	right:0px;
+	bottom:50%;
+	float:right;
+}
+#next{
+   left:0px;
+   float:left;
+	bottom:50%;
+}
+#prev:hover,#next:hover{
+	opacity:0.5;
+	filter:alpha(opacity=0.5);
+}
+#Orignal{
+	border-bottom:#5589b2 2px solid ;
+}
+.Menu li ul{
+	display:none;
+	
+}
+
+.Menu li ul li {
+	float: none;
+	list-style-type: none;
+	display:block;
+	background:rgba(255,255,255,0.5);
+	
+}
+@media screen max-width(max-width: 750px){
+	.LogoInsert{
+		display:none;
+	}
+	.Menu li ul li{
+		display:none;
+	}
+	.Menu li a:hover{
+		display:none;
+	}
+	.Menu li ul a{
+		display:none;
+	}
+	.Menu li ul a:hover
+}
+
+.Menu li a:hover{
+	border-bottom:#5589b2 2px solid;
+}
+
+.Menu li ul a{
+		font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;	
+		border-bottom: 1px dotted #389ac4;
+		padding:10px 15px;
+}
+.Menu li ul a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+.Menu li:hover ul{
+	display:block;
+}
+#prev, #next{
+	cursor:pointer;
+	z-index:30;
+	margin:85% 0 0 0;
+	position:relative;
+	opacity:1;
+	filter:alpha(opacity=1);
+}
+#prev{
+	left:0px;
+}
+#next{
+   right:0px;
+}
+#prev:hover,#next:hover{
+	opacity:0.5;
+	filter:alpha(opacity=0.5);
+}
+#Right{
+     right:0px;
+	float:right;
+ }
+#Left{
+	 float:left;
+	 left:0px;
+ }
+ #Center{
+	 float:center;
+	 margin:0 38% 0 38%;
+ }
+.Contenthead{
+	display:block;
+	border-bottom:rgba(204,204,204,1) 1px solid;
+	text-align:center;
+}
+/*picture text block 02 code*/
+.ContentTwo{
+	position:relative;
+	width:80%;
+	display:block;
+	margin:0 10% 0 10%;
+}
+.Contentcenter{
+    display:block;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+.Contentcenter img{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*product garllery code*/
+.ProductShow{
+	display:block;
+	width:100%;
+}
+.ProductItem{
+	display:inline-block;
+	width:23%;
+	margin:10px 0px 0px 10px;
+	border:#CCC 1px solid;
+}
+.ProductItem a:hover{
+	opacity:0.8;
+}
+.ProductItemText{
+	display:block;
+	float:center;
+}
+.ProductItemText p,h5{
+	display:inline;
+	float:center;
+}
+.ProductItemText p{
+	margin:15px 5px 15px 5px;
+	font-size:14px;
+}
+
+.ProductItemTextName{
+	border-bottom:rgba(153,153,153,1) 1px dotted;
+}
+.ProductItemBtn{
+    border:rgba(0,0,0,1) 1px solid; 
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family:'SwisNormal';
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.ProductItemBtn:hover{
+	background:rgba(0,0,0,1);
+	color:white;
+	
+}
+.ProductItem:hover{
+	border:#5589b2 1px solid;
+}
+.ProductItem .ProductItemBtn{
+	margin-left:auto;
+	margin-right:auto;
+}
+/* content block 03 code*/
+.ContentFour{
+	width:80%;
+	display:block;
+	margin:50px 10% 0 10%;
+}
+.ContentFour h1,.ContentFour h2{
+text-align:center;
+}
+
+/*footer code*/
+Footer{
+	display:block;
+	width:100%;
+}
+Footer .col-md-4{
+	vertical-align:top;
+	border-left:rgba(204,204,204,1) 1px solid;
+	text-align:center;
+}
+Footer .col-md-4 a{
+	word-wrap: break-word;
+	word-break:normal;
+	margin:10px 10px 10px 10px;
+}
+.Copyright{
+	background:black;
+	display:block;
+	text-align:center;
+}
+.Copyright p{
+	color:white;
+}
+/*Ingredient HTML CSS*/
+.Contentcenter .ProductItemBtn{
+	margin-left:auto;
+	margin-right:auto;
+}
+.Contentcenter p{
+	margin:10px 10px 10px 10px;
+}
+.InfoPic {
+	display: block;
+	background:rgba(255,255,255,0.5);
+	position:absolute;
+	z-index:99;
+	with:25%;
+	bottom: 0px;
+	
+}
+.InfoPic:hover {
+	background:rgba(255,255,255,0.8);
+}
+#InfoPicRight{
+
+}
+.ProductItemTextName h4{
+	color:white;
+}
+.InfoPic .ProductItemBtn{
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+/*change footer as menu list block*/
+.MenuColumn{
+	display:block;
+	vertical-align:middle;
+
+	}
+.MenuColumn .img-responsive{
+	vertical-align: middle;
+	margin:auto;
+}
+.MenuColumn p,.MenuColumn h3{
+    text-align:center;
+	
+}
+/*product show group code*/
+ProductGroup{
+	display:block;
+	width:100%;
+	margin:0px 0px 0px 0px;
+}
+.ProductNav{
+	display:inline-block;
+	right:0px;
+	vertical-align:top;
+}
+.ProductItemTextName h4{
+	color:black;
+}
+.ProductHead{
+	display: inline-block;
+	width:200px;
+	vertical-align:top;
+}
+.ProductContent{
+	width:100%;
+	border:rgba(204,204,204,1) thin solid;
+	padding:10px 0 50px 0;
+}
+
+/*ProductNav code*/
+.MenuItemBtn{
+	background:rgba(0,0,0,1);
+	color:white;
+	padding:15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+	border:rgba(0,0,0,1) thin solid;
+	font-family:'SwisNormal';
+	 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	margin:10px 0 10px 0px;
+}
+.MenuItemBtn:hover{
+    color:black;
+	background:#FFF;
+	
+}
+.ProductNav li ul{
+	display:none;
+	position:relative;
+	margin:10px 0px 10px 10px;;
+	
+}
+.ProductNav li ul li {
+	float: none;
+	list-style-type: none;
+	display:block;
+		margin:30px 0 30px 0;
+		width:150px;
+}
+
+.ProductNav li a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+
+.ProductNav li ul a{
+		font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:10px;
+		border-bottom: 1px dotted #389ac4;
+}
+.ProductNav li ul a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+.ProductNav li:hover ul{
+	display:block;
+}
+#NavSelect:hover{
+color:black;
+}
+/*product tabs group(div productcontent)*/
+.ProductContent li{
+	display:none;
+}
+.ProductContent li.Index{
+	display:block;
+}
+#display{
+	display:block;
+}
+/*picture-text italic code*/
+.Pictextback{
+	width:100%;
+	display: block;
+	position: relative;
+}
+.PictextItc{
+	width:100%;
+	display:block;
+	height:auto;
+	position:absolute;
+	bottom:10px;
+	left:50px;
+}
+.PictextItc p{
+	color:white;
+}
+.PictextItc .ProductItemBtn{
+	margin:10px 0px  10px 200px;
+}
+/*Company HTML CSS*/
+.PicCenter{
+	width:100%;
+	display:block;
+}
+.PicCenter h2,.PicCenter p{
+	text-align:center;
+}
+.PicCenter img{
+	float:center;
+	display:block;
+	margin:0 30% 0 30%;
+}
+.Content h1{
+float:center;
+margin:0 0% 0 20%;
+}
+.Contentext{
+	width:60%
+	/*border:rgba(51,51,51,1) 1px solid;*/
+}
+.Contentimg{
+	width:40%;
+}
+
+.PicText{
+	display:block;
+}
+.PicText .col-md-7 img{
+	border:#0C0 thin solid;
+}
+.PicText .col-md-7 p{
+	border:#903 thin solid;
+	vertical-align:text-bottom;
+	float:left;
+}
+#PicLeft{
+	dispaly:block;
+}
+#PicLeft img{
+	float:left;
+	margin:0;
+	width:50%;
+}
+#PicLeft p{
+	float:left;
+	display:inline-block;
+	word-wrap: break-word;
+	word-break:normal;
+	border:rgba(0,102,204,1) thin solid;
+	width:50%;
+}
+/*404 HTML CSS*/
+.Background404{
+	display:block;
+	width:100%;
+	height:50%;
+}
+.Background404 img{
+	
+	
+}
+/*Contact us HTML CSS*/
+
+form,.input-group-addon,.dropdown{
+	font-family:'SwisLight';
+	font-size:14px;
+}
+.dropdown a{
+	font-size:14px;
+}
+.dropdown:hover a{
+	color:rgba(153,153,153,1);
+	font-size:14px;
+}
+.btn-default{
+	font-family:'SwisLight';
+	font-size:14px;
+	color:rgba(153,153,153,1);
+}
+.input-group-addon,.dropdown{
+	display:inline;
+}
+
+#exampleInputPassword2{
+	display:inline;
+}
+.Banner{
+	display:block;
+	width:100%;
+	height:200px;
+	background:url(../images/seabackground.jpg) no-repeat bottom fixed;
+}
+#MapBlock{
+	background:rgba(0,0,0,0.7);
+	height:440px;
+	color:white;
+}
+#MapBlock p{
+	color:#D9D9D9;
+	
+}
+/*font icon bootstrap*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src:url(../font/glyphicons-halflings-regular.eot);
+  src:url(../font/glyphicons-halflings-regular.ttf) format('truetype'),url(../font/glyphicons-halflings-regular.woff2) format('woff2'),
+  url(../font/glyphicons-halflings-regular.woff) format('woff'),url(../font/glyphicons-halflings-regular.svg) format('svg');
+}
+
+/*font social icon stylecss*/
+@font-face {
+    font-family: 'icomoon';
+	src:url(../font/icomoon.eot);
+    src:    url('../font/icomoon.eot?bvzl8j#iefix') format('embedded-opentype'),
+        url('../font/icomoon.ttf?bvzl8j') format('truetype'),
+        url('../font/icomoon.woff?bvzl8j') format('woff'),
+        url('../font/icomoon.svg?bvzl8j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google3:before {
+    content: "\e900";
+	color:rgba(153,0,0,1);
+	font-size:18px;
+}
+.icon-facebook2:before {
+    content: "\e90a";
+	color:rgba(0,102,255,1);
+	font-size:18px;
+}
+.icon-blogger2:before {
+    content: "\e901";
+	font-size:18px;
+}
+.icon-linkedin:before {
+    content: "\e90c";
+	color:rgba(0,102,153,1);
+	font-size:18px;
+}
+.icon-search:before {
+    content: "\e907";
+	font-size:18px;
+}
+.icon-twitter:before {
+    content: "\e90b";
+	color:rgba(0,153,255,1);
+	font-size:18px;
+}
+/*imgzoom code css html*/
+/* imgbox */
+.Imgbox{
+	width:40%;
+	margin:0 0 0 10%;
+	display:inline-block;
+	}
+.tb-pic a{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	}
+.tb-pic a img{
+	vertical-align:middle;
+	}
+.tb-pic a{
+	*display:block;
+	*font-family:Arial;
+	*line-height:1;
+	}
+.tb-thumb{
+	margin:10px 0 0;
+	overflow:hidden;
+	}
+.tb-thumb li{
+	background:none repeat scroll 0 0 transparent;
+	float:left;
+	height:180px;
+	margin:0 6px 0 0;
+	overflow:hidden;
+	padding:1px;}
+.tb-s310, .tb-s310 a{
+	height:300px;
+	width:400px;
+
+	}
+.tb-s310, .tb-s310 img{
+	max-height:300px;
+	max-width:400px;}
+.tb-s310 a{
+	*font-size:271px;
+	}
+.tb-s40 a{
+	*font-size:271px;
+	}
+.tb-s40, .tb-s40 a{
+	height:150px;
+	width:200px;
+	}
+.tb-booth{
+	border:1px solid #CDCDCD;
+	position:relative;
+	z-index:1;
+	}
+.tb-thumb .tb-selected{
+border:rgba(51,51,51,0.6) 1px solid;
+height:155px;
+	}
+.tb-thumb .tb-selected div{
+	background-color:#FFFFFF;
+	border:medium none;}
+.tb-thumb li div{
+	border:1px solid #CDCDCD;
+	}
+div.zoomDiv{
+	z-index:999;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:150px;
+	background:#ffffff;
+	border:1px solid #CCCCCC;
+	display:none;
+	text-align:center;overflow:hidden;}
+div.zoomMask{
+	position:absolute;
+	background:rgba(102,102,102,0.6);
+	cursor:move;
+	z-index:1;
+	}
+/*cart varables*/
+.Contentext .ProductItemText p,.Contentext .ProductItemText h4,.Contentext .ProductItemText h5{
+	font-size:16px;
+}
+.minus h5,.plus h5{
+	font-size:24px;
+	color:rgba(0,0,0,1);
+}
+.CountNum{
+	width:40px;
+}
+table{
+	width:60%;
+}
+.NumLabel a { cursor: pointer; }
+.ProductNum{
+	display:inline-block;
+	width:30%;
+	vertical-align:top;
+	margin:5% auto;
+}
+/*menu button top imgbox*/
+ .btn-default{
+	 font-family:'SwisNormal';
+	 font-size:16px;
+	 padding:10px 25px;
+	
+ }
+ .btn-default:hover{
+	background:#000;
+	color:white;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background:black;
+	color:white;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+	background:black;
+	color:white;
+}

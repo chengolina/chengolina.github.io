@@ -1,0 +1,799 @@
+@charset "utf-8";
+/* CSS Document */
+/*HomePage Html CSS*/
+body,div,ul,li,a,img{margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;}
+ul,ol,li{list-style:none;}
+a,a:hover,a:focus{text-decoration:none;}
+h1{
+	font-family:'BroadWay';
+	font-size:38px;
+	color:rgba(153,153,153,1);
+	padding-top:0px;
+	padding-bottom:5px;
+}
+h2{
+	font-family:'Castellar';
+	font-size:24px;
+}
+h3{
+	font-family:'SwisNormal';
+	font-size:16px;
+}
+h4{
+	font-family:'SwisLight';
+	font-size:16px;
+	margin:5px auto 5px 5px;
+}
+h5{
+	font-family:'SwisNormal';
+	font-size:16px;
+}
+p,a{
+	font-family:'SwisLight';
+	font-size:16px;
+	color:rgba(153,153,153,1);
+}
+h6{
+	font-family:'SwisLight';
+	font-size:16px;
+	color:white;
+	background:linear-gradient(left,rgba(204,204,204,0),rgba(0,0,0,1),rgba(204,204,204,0));
+background:
+	-moz-linear-gradient(left,rgba(204,204,204,0),rgba(0,0,0,1),rgb(204,204,204,0));
+background:
+	-webkit-linear-gradient(left,rgba(204,204,204,0),rgba(0,0,0,1),rgba(204,204,204,0));
+	padding:10px 15px;
+	width:100%;
+}
+body{
+	display:block;
+	width:100%;
+	/*background:url(../../images/arches.png) repeat top left;*/
+}
+
+.clearfix{
+	clear:both;
+}
+/*Menlist include logo insert*/
+/*
+.LogoInsert{
+	display:inline-block;
+	height:60px;
+	width:150px;
+	position:absolute;
+}
+.Menu{
+	display:block;
+}
+.Menu li {
+	font-size:16px;
+	list-style-type: none;
+	display:inline-block;
+		
+}
+.Menu li a{
+	font-family:'SwisNormal';
+	font-size:16px;
+	display:block;	
+	color:#3e3e40;
+	
+}
+#Orignal{
+	border-bottom:#5589b2 2px solid ;
+}
+.Menu li ul{
+	display:none;
+	
+}
+.Menu li ul li {
+	float: none;
+	list-style-type: none;
+	display:block;
+}
+
+.Menu li a:hover{
+	border-bottom:#5589b2 2px solid;
+}
+
+.Menu li ul a{
+		font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;	
+		border-bottom: 1px dotted #389ac4;
+		background:rgba(255,255,255,0.6);
+}
+.Menu li ul a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+.Menu li:hover ul{
+	display:block;
+}
+*/
+.Menu{
+	display:block;
+	width:100%;
+}
+.Menu ul li{
+	font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;	
+		background:none;
+		
+}
+/*ImgGarlley code*/
+.Wrapper{
+    margin:80px auto 10px auto;
+	position:relative;
+	height:480px;
+	width:960px;
+}
+.BannerImg{
+	position:relative;
+	height:480px;
+	width:960px;
+	overflow:hidden;
+}
+.ImgList{
+	position:relative;
+	height:480px;
+	width:4800px;
+	overflow:hidden;
+	z-index:1;
+	margin:0px 0px 0px 0px;
+}
+.ImgList li{
+	float:left;
+	margin:0px 0px 0px 0px;
+	display:inline;
+}
+#prev, #next{
+	cursor:pointer;
+	z-index:30;
+	margin:85% 0 0 0;
+	position:relative;
+	opacity:1;
+	filter:alpha(opacity=1);
+}
+#prev{
+	left:0px;
+}
+#next{
+   right:0px;
+}
+#prev:hover,#next:hover{
+	opacity:0.5;
+	filter:alpha(opacity=0.5);
+}
+#Right{
+	 float:right;
+	 margin:auto;
+ }
+#Left{
+	 float:left;
+	 margin:auto;
+ }
+ #Center{
+	 float:center;
+	 margin:0 38% 0 38%;
+ }
+.BackgroundText{
+	top:130px;
+	position:absolute;
+	background:rgba(255,255,255,0.4);
+	width:530px;
+	height:180px;
+	z-index:30;
+}
+.InfoList {
+	display: block;
+	position:absolute;
+	left:100px;
+	top:200px;
+	z-index: 30;
+}
+.InfoList li{
+	display:none;
+}
+.InfoList .InfoShow{
+	display:inline;
+	color:#5589b2;
+	font-size:22px;
+    font-family:'SwisLight';
+}
+.InfoIcon{
+	position:absolute;
+	bottom:0px;
+	z-index:30;
+	display:block;
+	margin:10px 0px 10px 40px;
+	height:12px;
+}
+.InfoIcon li{
+	display:inline;
+	float: left;
+	margin-right: 10px;
+	height:12px;
+	width:12px;
+	overflow:hidden;
+	background:url(../images/dot.png)  0px 0px  no-repeat;
+}
+.InfoIcon .InfoIconNum{
+	background-position:0px -12px;
+}
+/* Picture text 01 css*/
+/*.Content{
+	width:80%;
+	display:block;
+	border-bottom:rgba(204,204,204,1) 1px solid;
+	margin:0 10% 0 10%;
+}
+.Contentimg{
+	display: inline-block;
+	width: 55%;
+	float: left;
+	overflow: hidden;
+}
+.Contentext{
+	display:inline-block;
+	width:45%;
+	float:left;
+	margin:0 0 0 0;
+	word-wrap:normal; 
+	white-space:normal;
+	border:rgba(51,51,51,1) 1px solid;
+}
+.Contentext p,h3,h2{
+	white-space:normal;
+	margin:5px 10px 5px 10px;
+}*/
+.row .col-md-6 img{
+	float:center;
+	margin:0 0px 0 100px;
+}
+.Contenthead{
+	display:block;
+	border-bottom:rgba(204,204,204,1) 1px solid;
+}
+/*picture text block 02 code*/
+.ContentTwo{
+	position:relative;
+	width:80%;
+	display:block;
+	margin:0 10% 0 10%;
+}
+.Contentcenter{
+	float:center;
+	margin:0 20% 0 20%;
+	text-align:center;
+}
+
+/*product garllery code*/
+.ProductShow{
+	display:block;
+	width:100%;
+}
+.ProductItem{
+	display:inline-block;
+	width:250px;
+	margin:10px 0px 0px 10px;
+	border:#CCC 1px solid;
+}
+.ProductItem a:hover{
+	opacity:0.8;
+}
+.ProductItemText{
+	display:block;
+	float:center;
+}
+.ProductItemText p,h5{
+	display:inline;
+	float:center;
+}
+.ProductItemText p{
+	margin:15px 5px 15px 5px;
+	font-size:14px;
+}
+
+.ProductItemTextName{
+	border-bottom:rgba(153,153,153,1) 1px dotted;
+}
+.ProductItemBtn{
+    border:rgba(0,0,0,1) 1px solid; 
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-family:'SwisNormal';
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	margin:10px 0 10px 50px;
+}
+.ProductItemBtn:hover{
+	background:rgba(0,0,0,1);
+	color:white;
+	
+}
+.ProductItem:hover{
+	border:#5589b2 1px solid;
+}
+.Contentcenter .ProductItemBtn{
+	margin:0 42% 0 42%;
+}
+/* content block 03 code*/
+.ContentFour{
+	width:80%;
+	display:block;
+	margin:50px 10% 0 10%;
+	background:url(../images/haidan-3.jpg) no-repeat;
+	height:500px;
+}
+.ContentFour h1,.ContentFour h2{
+ float:center;
+margin:0 45% 0 45%;
+}
+
+/*footer code*/
+Footer{
+	display:block;
+	width:100%;
+	background:rgba(204,204,204,0.5);
+}
+Footer .col-md-4{
+	vertical-align:top;
+	border-left:rgba(204,204,204,1) 1px solid;
+	text-align:center;
+}
+Footer .col-md-4 a{
+	word-wrap: break-word;
+	word-break:normal;
+	margin:10px 10px 10px 10px;
+}
+.Copyright{
+	background:black;
+	display:block;
+	text-align:center;
+}
+.Copyright p{
+	color:white;
+
+}
+/*Ingredient HTML CSS*/
+.Contenthead h1{
+	margin:0 48% 0 48%;
+}
+.Contentcenter .ProductItemBtn{
+	margin:0 40% 0 40%;
+}
+.Contentcenter p{
+	margin:10px 10px 10px 10px;
+}
+.InfoPic {
+	display: block;
+	background: rgba(255,255,255,0.5);
+	position:absolute;
+	top:233px;
+	left:195px;
+	
+}
+.InfoPic:hover {
+	display:block;
+}
+#InfoPicRight{
+	left:400px;
+}
+.ProductItemTextName h4{
+	color:white;
+}
+.InfoPic .ProductItemBtn{
+	margin:0 40px 0 40px;
+}
+
+/*change footer as menu list block*/
+.MenuColumn{
+	width:100%;
+	margin:10px 0% 10px 2%;
+	height:250px;
+	display:block;
+	border-left:rgba(204,204,204,1) 1px solid;
+	border-right:rgba(204,204,204,1) 1px solid;
+	vertical-align:top;
+}
+.MenuColumn p,.MenuColumn h3{
+	float:center;
+    text-align:center;
+}
+/*product show group code*/
+ProductGroup{
+	display:block;
+	width:100%;
+	margin:0px 0px 0px 0px;
+}
+.ProductNav{
+	display:inline-block;
+	right:0px;
+	vertical-align:top;
+}
+.ProductItemTextName h4{
+	color:black;
+}
+.ProductHead{
+	display: inline-block;
+	width:200px;
+	vertical-align:top;
+}
+.ProductContent{
+	width:100%;
+	border:rgba(204,204,204,1) thin solid;
+	padding:10px 0 50px 0;
+}
+
+/*ProductNav code*/
+.MenuItemBtn{
+	background:rgba(0,0,0,1);
+	color:white;
+	padding:15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+	border:rgba(0,0,0,1) thin solid;
+	font-family:'SwisNormal';
+	 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	margin:10px 0 10px 0px;
+}
+.MenuItemBtn:hover{
+    color:black;
+	background:#FFF;
+	
+}
+.ProductNav li ul{
+	display:none;
+	position:relative;
+	margin:10px 0px 10px 10px;;
+	
+}
+.ProductNav li ul li {
+	float: none;
+	list-style-type: none;
+	display:block;
+		margin:30px 0 30px 0;
+		width:150px;
+}
+
+.ProductNav li a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+
+.ProductNav li ul a{
+		font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:10px;
+		border-bottom: 1px dotted #389ac4;
+}
+.ProductNav li ul a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+.ProductNav li:hover ul{
+	display:block;
+}
+#NavSelect:hover{
+color:black;
+}
+/*product tabs group(div productcontent)*/
+.ProductContent li{
+	display:none;
+}
+.ProductContent li.Index{
+	display:block;
+}
+#display{
+	display:block;
+}
+/*picture-text italic code*/
+.PictextItc{
+	margin:10px auto;
+	display:block;
+	background:url(../images/pictureoyster-1.png) no-repeat right;
+	width:70%;
+	height:200px;
+}
+.PictextItc p{
+	margin:20px 0  10px 100px;
+	display:block;
+	width:40%;
+}
+.PictextItc .ProductItemBtn{
+	margin:10px 0px  10px 400px;
+}
+/*Company HTML CSS*/
+.PicCenter{
+	width:100%;
+	display:block;
+}
+.PicCenter h2,.PicCenter p{
+	text-align:center;
+}
+.PicCenter img{
+	float:center;
+	display:block;
+	margin:0 30% 0 30%;
+}
+.Content h1{
+float:center;
+margin:0 0% 0 20%;
+}
+.Contentext{
+	width:60%
+	/*border:rgba(51,51,51,1) 1px solid;*/
+}
+.Contentimg{
+	width:40%;
+}
+
+.PicText{
+	display:block;
+}
+.PicText .col-md-7 img{
+	border:#0C0 thin solid;
+}
+.PicText .col-md-7 p{
+	border:#903 thin solid;
+	vertical-align:text-bottom;
+	float:left;
+}
+#PicLeft{
+	dispaly:block;
+}
+#PicLeft img{
+	float:left;
+	margin:0;
+	width:50%;
+}
+#PicLeft p{
+	float:left;
+	display:inline-block;
+	word-wrap: break-word;
+	word-break:normal;
+	border:rgba(0,102,204,1) thin solid;
+	width:50%;
+}
+/*404 HTML CSS*/
+.Background404{
+	display:block;
+	width:100%;
+	height:50%;
+}
+.Background404 img{
+	
+	
+}
+/*Contact us HTML CSS*/
+
+form,.input-group-addon,.dropdown{
+	font-family:'SwisLight';
+	font-size:14px;
+}
+.dropdown a{
+	font-size:14px;
+}
+.dropdown:hover a{
+	color:rgba(153,153,153,1);
+	font-size:14px;
+}
+.btn-default{
+	font-family:'SwisLight';
+	font-size:14px;
+	color:rgba(153,153,153,1);
+}
+.input-group-addon,.dropdown{
+	display:inline;
+}
+
+#exampleInputPassword2{
+	display:inline;
+}
+.Banner{
+	display:block;
+	width:100%;
+	height:200px;
+	background:url(../images/seabackground.jpg) no-repeat bottom fixed;
+}
+#MapBlock{
+	background:rgba(0,0,0,0.7);
+	height:440px;
+	color:white;
+}
+/*font icon bootstrap*/
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url(../font-AUTO/glyphicons-halflings-regular.eot) ;
+  src:url(../font-AUTO/glyphicons-halflings-regular.ttf) format('truetype'),url(../font-AUTO/glyphicons-halflings-regular.woff2) format('woff2'),
+  url(../font-AUTO/glyphicons-halflings-regular.woff) format('woff'),url(../font-AUTO/glyphicons-halflings-regular.svg) format('svg');
+}
+/*
+  src:  format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}*/
+/*font social icon stylecss*/
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../font-AUTO/icomoon.eot?bvzl8j');
+    src:    url('../font-AUTO/icomoon.eot?bvzl8j#iefix') format('embedded-opentype'),
+        url('../font-AUTO/icomoon.ttf?bvzl8j') format('truetype'),
+        url('../font-AUTO/icomoon.woff?bvzl8j') format('woff'),
+        url('../font-AUTO/icomoon.svg?bvzl8j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google3:before {
+    content: "\e900";
+	color:rgba(153,0,0,1);
+	font-size:18px;
+}
+.icon-facebook2:before {
+    content: "\e90a";
+	color:rgba(0,102,255,1);
+	font-size:18px;
+}
+.icon-blogger2:before {
+    content: "\e901";
+	font-size:18px;
+}
+.icon-linkedin:before {
+    content: "\e90c";
+	color:rgba(0,102,153,1);
+	font-size:18px;
+}
+.icon-search:before {
+    content: "\e907";
+	font-size:18px;
+}
+.icon-twitter:before {
+    content: "\e90b";
+	color:rgba(0,153,255,1);
+	font-size:18px;
+}
+/*imgzoom code css html*/
+/* imgbox */
+.Imgbox{
+	width:40%;
+	margin:0 0 0 10%;
+	display:inline-block;
+	}
+.tb-pic a{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	}
+.tb-pic a img{
+	vertical-align:middle;
+	}
+.tb-pic a{
+	*display:block;
+	*font-family:Arial;
+	*line-height:1;
+	}
+.tb-thumb{
+	margin:10px 0 0;
+	overflow:hidden;
+	}
+.tb-thumb li{
+	background:none repeat scroll 0 0 transparent;
+	float:left;
+	height:180px;
+	margin:0 6px 0 0;
+	overflow:hidden;
+	padding:1px;}
+.tb-s310, .tb-s310 a{
+	height:300px;
+	width:400px;
+
+	}
+.tb-s310, .tb-s310 img{
+	max-height:300px;
+	max-width:400px;}
+.tb-s310 a{
+	*font-size:271px;
+	}
+.tb-s40 a{
+	*font-size:271px;
+	}
+.tb-s40, .tb-s40 a{
+	height:150px;
+	width:200px;
+	}
+.tb-booth{
+	border:1px solid #CDCDCD;
+	position:relative;
+	z-index:1;
+	}
+.tb-thumb .tb-selected{
+border:rgba(51,51,51,0.6) 1px solid;
+height:155px;
+	}
+.tb-thumb .tb-selected div{
+	background-color:#FFFFFF;
+	border:medium none;}
+.tb-thumb li div{
+	border:1px solid #CDCDCD;
+	}
+div.zoomDiv{
+	z-index:999;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:200px;
+	height:150px;
+	background:#ffffff;
+	border:1px solid #CCCCCC;
+	display:none;
+	text-align:center;overflow:hidden;}
+div.zoomMask{
+	position:absolute;
+	background:rgba(102,102,102,0.6);
+	cursor:move;
+	z-index:1;
+	}
+/*cart varables*/
+.Contentext .ProductItemText p,.Contentext .ProductItemText h4,.Contentext .ProductItemText h5{
+	font-size:16px;
+}
+.minus h5,.plus h5{
+	font-size:24px;
+	color:rgba(0,0,0,1);
+}
+.CountNum{
+	width:40px;
+}
+table{
+	width:50%;
+}
+.NumLabel a { cursor: pointer; }
+.ProductNum{
+	display:inline-block;
+	width:25%;
+	vertical-align:top;
+	margin:5% auto;
+}
+/*menu button top imgbox*/
+ .btn-default{
+	 font-family:'SwisNormal';
+	 font-size:16px;
+	 padding:10px 25px;
+	
+ }
+ .btn-default:hover{
+	background:#000;
+	color:white;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background:black;
+	color:white;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+	background:black;
+	color:white;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+font-family:'BroadWay';
+font-style: normal;
+font-weight: normal;
+src:url(BROADW.TTF) format('truetype');
+}
+@font-face {
+	font-family:'Castellar';
+	font-style:normal;
+	font-weight:normal;
+	src:url(CASTELAR.TTF) format('truetype');
+}
+@font-face{
+	font-family:'SwisNormal';
+	font-style:normal;
+	font-weight:normal;
+	src:url(SwisNormal.ttf) format('truetype');
+}
+@font-face{
+	font-family:'SwisLight';
+	font-style:normal;
+	font-weight:normal;
+	src:url(SwisLight.ttf) format('truetype');
+}

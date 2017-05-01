@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+.Contenthead h1{
+	margin:0 48% 0 48%;
+}
+.Contentcenter .ProductItemBtn{
+	margin:0 40% 0 40%;
+}
+.Contentcenter p{
+	margin:10px 10px 10px 10px;
+}
+.InfoPic {
+	display: block;
+	background: rgba(255,255,255,0.5);
+	position:absolute;
+	top:233px;
+	left:195px;
+	
+}
+.InfoPic:hover {
+	display:block;
+}
+#InfoPicRight{
+	left:400px;
+}
+.ProductItemTextName h4{
+	color:white;
+}
+.InfoPic .ProductItemBtn{
+	margin:0 40px 0 40px;
+}
+
+/*change footer as menu list block*/
+.MenuColumn{
+	width:100%;
+	margin:10px 0% 10px 2%;
+	height:250px;
+	display:block;
+	border-left:rgba(204,204,204,1) 1px solid;
+	border-right:rgba(204,204,204,1) 1px solid;
+	vertical-align:top;
+}
+.MenuColumn p,.MenuColumn h3{
+	float:center;
+    text-align:center;
+}
+/*product show group code*/
+ProductGroup{
+	display:block;
+	width:100%;
+	margin:0px 0px 0px 0px;
+}
+.ProductNav{
+	display:inline-block;
+	right:0px;
+	vertical-align:top;
+}
+.ProductItemTextName h4{
+	color:black;
+}
+.ProductHead{
+	display: inline-block;
+	width:200px;
+	vertical-align:top;
+}
+.ProductContent{
+	width:100%;
+	border:rgba(204,204,204,1) thin solid;
+	padding:10px 0 50px 0;
+}
+.Menu{
+	display:block;
+	z-index:50;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+.Menu li {
+	font-size:18px;
+	list-style-type: none;
+	display:block;
+	float:left;	
+}
+.Menu li a{
+	font-family:'SwisNormal';
+	font-size:18px;
+	display:block;	
+	padding:15px 25px;
+	margin:0px 20px 0 0;
+	color:#3e3e40;
+	
+}
+#Orignal{
+	border-bottom:#5589b2 3px solid ;
+}
+/*ProductNav code*/
+.MenuItemBtn{
+	background:rgba(0,0,0,1);
+	color:white;
+	padding:15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+	border:rgba(0,0,0,1) thin solid;
+	font-family:'SwisNormal';
+	 -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	margin:10px 0 10px 0px;
+}
+.MenuItemBtn:hover{
+    color:black;
+	background:#FFF;
+	
+}
+.ProductNav li ul{
+	display:none;
+	position:relative;
+	margin:10px 0px 10px 10px;;
+	
+}
+.ProductNav li ul li {
+	float: none;
+	list-style-type: none;
+	display:block;
+		margin:30px 0 30px 0;
+		width:150px;
+}
+
+.ProductNav li a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+
+.ProductNav li ul a{
+		font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:10px;
+		border-bottom: 1px dotted #389ac4;
+}
+.ProductNav li ul a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+.ProductNav li:hover ul{
+	display:block;
+}
+#NavSelect:hover{
+color:black;
+}
+/*product tabs group(div productcontent)*/
+.ProductContent li{
+	display:none;
+}
+.ProductContent li.Index{
+	display:block;
+}
+#display{
+	display:block;
+}
+/*picture-text italic code*/
+.PictextItc{
+	margin:10px auto;
+	display:block;
+	background:url(../images/pictureoyster-1.png) no-repeat right;
+	width:70%;
+	height:200px;
+}
+.PictextItc p{
+	margin:20px 0  10px 100px;
+	display:block;
+	width:40%;
+}
+.PictextItc .ProductItemBtn{
+	margin:10px 0px  10px 400px;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	font-family:'BroadWay';
+	font-size:24px;
+}
+p{
+	font-family:'SwisLight';
+	font-size:18px;
+}
+h3{
+	font-family:'SwisNormal';
+	font-size:20px;
+}
+h2{
+	font-family:'Castellar';
+	font-size:20px;
+}

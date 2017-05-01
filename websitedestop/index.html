@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+<title>olina.home</title>
+<link href="CSS-AUTO/mobilemenu-mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" />
+<link href="CSS-AUTO/hamburger.css" rel="stylesheet" type="text/css" media="screen and (max-width: 750px)"/>
+<link href="font/stylefont.css" rel="stylesheet" type="text/css"/>
+<link href="CSS/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="CSS-AUTO/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--This wrapping container is used to get the width of the whole content-->
+<div id="container">
+    <!--The Hamburger Button in the Header-->
+    <header>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!--The mobile navigation Markup hidden via css-->
+    <nav>
+        <ul>
+        <div class="dropdown">
+  <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Home <span class="caret"></span><a href="index.html"></a></button>
+  </div>
+  <div class="dropdown">
+  <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Ingredient <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Shrimp</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Fish</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Fruit</a>
+      </li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Vegetables</a></li>
+   </ul>
+</div>
+  <div class="dropdown">
+  <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Product <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Condiment</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Drink</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html"> Flour</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="ingredient.html">Snack</a></li>
+   </ul>
+</div>
+ <div class="dropdown">
+  <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Company <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="company introduce.html">History</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="contact us.html">GoogleMap</a></li>
+   </ul>
+</div>
+<div class="dropdown">
+  <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Contact Us <span class="caret"></span></button>
+  </div>
+<!--test -->
+        </ul>
+    </nav>
+    <!--The Layer that will be layed over the content
+    so that the content is unclickable while menu is shown-->
+ 
+    <div id="contentLayer"></div>
+
+	
+ <div id="content">
+      
+<div id="myCarousel" class="carousel slide">
+   <!-- 轮播（Carousel）指标 -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+   </ol>   
+   <!-- 轮播（Carousel）项目 -->
+   <div class="carousel-inner">
+      <div class="item active">
+         <img src="images/banner/2.jpg" alt="First slide">
+         <div class="carousel-caption"><h6>【Scallop】 Excellent Preservation Technology to Ensure Fresh Ingredients</h6></div>
+      </div>
+      <div class="item">
+         <img src="images/banner/1.jpg" alt="Second slide">
+         <div class="carousel-caption"><h6>【Oyster】Limited Time Offer Preorder as soon as Possible</h6></div>
+      </div>
+      <div class="item">
+         <img src="images/banner/3.jpg" alt="Third slide">
+         <div class="carousel-caption"><h6>【Sea urchin】Airlift For Japanese Products Three Times a Week</h6></div>
+      </div>
+      <div class="item">
+         <img src="images/banner/4.jpg" alt="Fourth slide">
+         <div class="carousel-caption"><h6>【Chutoro】Cost-effective and High Quality to Be Guarantee</h6></div>
+      </div>
+      <div class="item">
+         <img src="images/banner/5.jpg" alt="Fifth slide">
+         <div class="carousel-caption"><h6>【Otoro】Welcome to Our Website For Shopping</h6></div>
+      </div>
+   </div>
+   <!-- 轮播（Carousel）导航 -->
+   <a class="carousel-control left" href="#myCarousel" 
+      data-slide="prev"><img src="images/nav-1.png" id="prev"/></a>
+   <a class="carousel-control right" href="#myCarousel" 
+      data-slide="next"><img id="next" src="images/nav-2.png"/></a>
+</div> 
+<div class="LogoInsert">
+<a href="#"><img src="images/olina.png"/></a>
+</div>
+<div class="Menu">
+<li>
+<a id="Orignal" href="index.html">Home</a>
+</li>
+<li>
+<a href="ingredient.html">Ingredients</a>
+<ul>
+<li><a href="ingredient.html">Shrimp</a></li>
+<li><a href="ingredient.html">Fish</a></li>
+<li><a href="ingredient.html">Meat</a></li>
+<li><a href="ingredient.html">Vegetables</a></li>
+</ul>
+</li>
+<li>
+<a href="ingredient.html">Product</a>
+<ul>
+<li><a href="ingredient.html">condiment</a></li>
+<li><a href="ingredient.html">Drink</a></li>
+<li><a href="ingredient.html">Flour</a></li>
+<li><a href="ingredient.html">Snack</a></li>
+</ul>
+</li>
+<li>
+<a href="company introduce.html">Company</a>
+<ul>
+<li><a href="company introduce.html">History</a></li>
+<li><a href="contact us.html">GoogleMap</a></li>
+</ul>
+</li>
+<li><a href="contact us.html">Contact Us</a></li>
+
+</div>
+<div class="clearfix"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-5">
+<img class="img-responsive" style="margin: 0.625rem 0px 0px 0.625rem"src="images/Polos-otoro.jpg"/></div>
+<div class="col-md-7">
+<div class="Contenthead">
+<h1>01</h1>
+</div>
+<h2> introduce of tuna</h2>
+<p>Tunna Fish has three parts of meat for cutting.They are otoro,chutoro,akami.</p>
+<h3>Otoro:</h3>
+<p>This section contains lots of fat. Many people love this part beacause of its tastes.Otoro is taken from the actual under-belly inside the tuna, and it is by itself separated into grades which happen to be recognized according to the marbling through out the steak, very similar to inside grading beef. By far the most precious o-toro or otoro, comes from the lower belly of the fish towards the head. </p>
+<h3>Chutoro:</h3>
+<p>This section contains fat but less than Otoro. However. it still tastes delicious.a lower top quality, derives from the tuna belly at the center and rear through the tuna, which is not as much marbled when compared with otoro sushi.Chutoro is normally much less veined by means of fat, even though it remains a lot more oily compared with pieces from the higher area from the fish, including akami.</p></br>
+<button class="ProductItemBtn">Read More</button>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="ContentTwo">
+<div class="Contentcenter">
+<div class="Contenthead">
+<h1>02</h1>
+</div>
+<h2>Hot Product Items</h2>
+<p>Using minus 50 degrees freezing technology to reserve our products.</p>
+<p>There are most popular products showing on follow that:</p>
+</div>
+<!--Product Show block-->
+<div class="ProductShow">
+<div class="ProductItem">
+<a href="#"><img class="img-responsive" src="images/chibei.jpg" /></a>
+<div class="ProductItemText">
+<div class="ProductItemTextName">
+<h4>Name:<strong>Ark Shell</strong></h4>
+</div>
+<p>Unit per price:</p>
+<h5>HK$75.00/KG</h5>
+</br>
+<p>Product Unit: 4-6P/KG</p>
+<button class="ProductItemBtn">Purchase</button>
+</div>
+</div>
+<div class="ProductItem">
+<a href="#"><img class="img-responsive" src="images/OTORO.jpg" /></a>
+<div class="ProductItemText">
+<div class="ProductItemTextName">
+<h4>Name:<strong>Otoro</strong></h4>
+</div>
+<p>Unit per price:</p>
+<h5>HK$800.00/KG</h5>
+</br>
+<p>Product Unit: 0.57-0.7KG/PC</p>
+<button class="ProductItemBtn">Purchase</button>
+</div>
+</div>
+<div class="ProductItem">
+<a href="#"><img class="img-responsive" src="images/Kajikitoro.jpg" /></a>
+<div class="ProductItemText">
+<div class="ProductItemTextName">
+<h4>Name:<strong>Kajikitoro</strong></h4>
+</div>
+<p>Unit per price:</p>
+<h5>HK$230.00/KG</h5>
+</br>
+<p>Product Unit: 5-10KG/PC</p>
+<button class="ProductItemBtn">Purchase</button>
+</div>
+</div>
+<div class="ProductItem">
+<a href="#"><img class="img-responsive" src="images/Mentaiko.jpg" /></a>
+<div class="ProductItemText">
+<div class="ProductItemTextName">
+<h4>Name:<strong>Mentaiko</strong></h4>
+</div>
+<p>Unit per price:</p>
+<h5>HK$60.00/PC</h5>
+</br>
+<p>Product Unit: 200g/PC</p>
+<button class="ProductItemBtn">Purchase</button>
+</div>
+</div>
+<div class="ProductItem">
+<a href="#"><img class="img-responsive" src="images/A5beef.jpg" /></a>
+<div class="ProductItemText">
+<div class="ProductItemTextName">
+<h4>Name:<strong>A5 Japan beef</strong></h4>
+</div>
+<p>Unit per price:</p>
+<h5>HK$342.00/Pkg</h5>
+</br>
+<p>Product Unit: 280-300g/Pkg</p>
+<button class="ProductItemBtn">Purchase</button>
+</div>
+</div>
+</div>
+</div>
+</br>
+</br>
+</br>
+</br>
+<div class="container-fluid">
+<div class="col-md-6">
+<div class="Contenthead">
+<h1>03</h1>
+</div>
+<h2>Delicious Tuna </h2>
+<p>Often the unique and delicious taste of otoro charms the majority of people as soon as they sample it. The amazing sirloin feel of raw tuna fuses together with the fatty tissue from the belly to generate a rich and creamy experiencing inside the mouth, along with the flesh from the tuna evaporating while you indulge in it. Otoro is frequently included with sashimi and additionally nigiri sushi, mainly because the sophisticated essence, fantastic composition, and exquisite marbling are usually plainly recognized throughout these two pair of raw species of fish dishes. Additionally it is generally used to produce seared hard to find tuna, that features a delectable pleasant prepared surface along with a rich and creamy amazing interior.</p>
+<a href="#"><img class="img-responsive" src="images/chutoro.jpg" /></a>
+</div>
+<div class="col-md-6">
+<a href="#"><img class="img-responsive" src="images/otoro1.jpg" /></a>
+<p>Chutoro or chu-toro is medium fatty tuna – found next to the akami moving down towards the belly tip of the fish.Chūtoro 中とろ is the name for medium fatty tuna when served in sushi restaurant.Fish For Sushi's super premium Chutoro (中トロ ) is cut from the most flavor-filled, highly prized portion of the tuna (the fatty underbelly) and only available in limited quantities. A Japanese delicacy, our super premium Chutoro's marbled texture is cut with the perfect amount of fat to melt in your mouth. Fish For Sushi's premium Chutoro is super frozen and vacuum sealed when you place your order, to preserve the tuna's freshness, flavor and vivid color.Health Benefits of Tuna Belly
+Incorporating Chutoro into your diet has long-lasting dietary benefits. Fish For Sushi Choturo contains protein, omegas-3s and selenoneine (a source of naturally occurring antioxidants that act as anti-inflammatories in the body). </br></p>
+<strong><h5>Fish Facts</h5></strong></br> 
+<p>Chutoro is cut from the underbelly of the tuna, which is marbled with fat, making it sweet, tender and delicious!</br></p> 
+<strong><h5>How to Prepare</h5></strong></br> 
+<p>Preparing this delicacy is simple, just rinse in cold water and defrost in the refrigerator for 6-7 hours, slice and enjoy!</p>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="container-fluid">
+<div class="ContentFour">
+<div class="row">
+<div class="Contenthead">
+<h1>04</h1>
+</div>
+<h2>Our Orignal product--sea urchin</h2>
+<div  id="align-bottom">
+<p>Sea urchins are bottom feeding echinoderms that are found in every ocean around the world. California sea urchins are usually found in kelp beds near the coastline in about 50 feet of water. The urchins that we process range from dark blackish purple to red in color. Covered with short to long spines, the diameter of a sea urchin can reach up to six inches and the average weight is one pound.
+</p>
+</div>
+<div id="align-bottom"><img src="images/haidan-3-1.jpg" class="img-responsive" /></div>
+<div  id="align-bottom">
+<p>Inside every sea urchin is the prize: bright orange to pale yellow, “tongues” of uni. Commonly referred to as roe, these soft golden tongues are actually the urchin’s reproductiveorgans. On average, each urchin will contain five uni tongues. Uni has long been considered a delicacy in Japan and sushi bars worldwide because of its sweet flavor and succulent texture that melts in your mouth. In some cultures, uni is considered an aphrodisiac!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<footer>
+<div class="row">
+<div class="col-md-4">
+<h3>Company Info</h3>
+<p>TAK WAH TRADING CO.,LTD.</p>
+<p>Japan Seafood Wholesaler</p>
+<p><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 852 2619 9010</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> 852 2677 3356</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> takwahjapanseafood@yahoo.com.hk</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> A,16F,WAY LEE INDUSTRIAL CENTER,</br>30-38 TSUEN KING CIRCUIT,TSUEN WAN,.N.T.,HK</a></p>
+</div>
+<div class="col-md-4">
+<h3><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Price List Download</h3>
+<p><a href="#">Fish</a></p>
+<p><a href="#">Shrimp</a></p>
+<p><a href="#">Vegetables</a></p>
+<p><a href="#">Fruit</a></p>
+<h3>Scoial Link</h3>
+<span class="icon-facebook2" aria-hidden="true"></span><a href="https://www.facebook.com/takwah/"></a>
+<span class="icon-google3" aria-hidden="true"></span><a href="http://takwahjapanseafood.blogspot.hk/"></a>
+<span class="icon-linkedin" aria-hidden="true"></span><a href="https://www.instagram.com/takwahcheng/"></a>
+</div>
+<div class="col-md-4">
+<h3>Membership</h3>
+<p><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Change Password</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> My Shopcart</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Member Info</a></p>
+<p><a href="#"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Order History</a></p>
+</div>
+</div>
+</footer>
+<div class="Copyright">
+</br>
+<p>Copyright<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>Olina.2016  All Rights Reserved</p>
+</br>
+</div>
+
+</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<script src="JS-AUTO/hamburger.js"></script>
+</html>

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen max-width(max-width: 750px){
+	.IogoInsert{
+		display:none;
+	}
+	#container-mobilemenu{
+		display: block;
+		width:100%;
+	}
+.Menu{
+	display:block;
+	width:100%;
+}
+.Menu ul li{
+	font-size:1rem;
+		font-family:'SwisLight';
+		text-align:center;	
+		background:none;
+		
+	}
+	#InfoPicFont h4,#InfoPicFont h5{
+	color:rgba(255,255,255,1);
+	}
+.InfoPic:hover {
+	background:rgba(0,0,0,0.6);
+	
+}
+	table{
+	width:90%;
+}
+	.ProductNum{
+		width:95%;
+	}
+}
+@media screen min-width(min-width:751px){
+	
+	.Menu{
+	display:block;
+	position:absolute;
+	top:0px;
+	left:15%;
+	
+}
+	.Menu li {
+	font-size:16px;
+	list-style-type: none;
+	display:inline-block;
+	vertical-align:top;
+		
+}
+.Menu li a{
+	font-family:'SwisNormal';
+	font-size:16px;
+	display:block;	
+	color:#3e3e40;
+	padding:10px 15px;
+	
+}
+	#Orignal{
+	border-bottom:#5589b2 2px solid ;
+}
+.Menu li ul{
+	display:none;
+	
+}
+
+.Menu li ul li {
+	float: none;
+	list-style-type: none;
+	display:block;
+	background:rgba(255,255,255,0.5);
+	
+}
+	.Menu li a:hover{
+	border-bottom:#5589b2 2px solid;
+}
+
+.Menu li ul a{
+		font-size:16px;
+		font-family:'SwisLight';
+		text-align:center;	
+		border-bottom: 1px dotted #389ac4;
+		padding:10px 15px;
+}
+.Menu li ul a:hover{
+	border-bottom:#5589b2 3px solid;
+}
+.Menu li:hover ul{
+	display:block;
+}
+	
+	.ContentCenter img{
+		margin: auto;
+	}
+	.ProductItem{
+		display:inline-block;
+		width:23%;
+	}
+	.ContentFour{
+	width:80%;
+	display:block;
+	margin:50px 10% 0 10%;
+}
+.ContentFour h1,.ContentFour h2{
+text-align:center;
+}
+	.InfoPic {
+		width:25%;
+		bottom:0px;
+	}
+	.InfoPic .ProductItemBtn{
+	margin-left:auto;
+	margin-right:auto;
+}
+	.ProductNav{
+	display:inline-block;
+	right:0px;
+	vertical-align:top;
+}
+	.PictextItc .ProductItemBtn{
+	margin:10px 0px  10px 200px;
+}
+	.Imgbox{
+	width:40%;
+	margin:0 0 0 10%;
+	display:inline-block;
+	}
+	.table{
+		width:60%;
+	}
+	.ProductNum{
+		width:60%;
+	}
+	
+}
+document.write('<script src="JS-AUTO/hamburger.js"></script>'); 
+
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+<script src="JS-AUTO/hamburger.js"></script>
+
+
+
+
+<script type="text/javascript">	    
+	var scrWidth = window.screen.width;    
+	if(scrWidth <= 750){ 
+         document.write('<scr'+'ipt type="text/javascript" src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></scr'+'ipt>');
+		
+		document.write("<script language=\"javascript\" src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js" > <\/script>");
+		 document.write("<script language=\"javascript\" src="JS-AUTO\/hamburger.js\"> <\/script>");
+	}       
+</script>
+
+
+
+
+document.write('<scr'+'ipt type="text/javascript" src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></scr'+'ipt>');
+		
+		document.write("<script language=\"javascript\" src="https:\//code.jquery.com\/ui\/1.11.1\/jquery-ui.min.js\" > <\/script>");
+		 document.write("<script language=\"javascript\" src="JS-AUTO\/hamburger.js\"> <\/script>");
+		document.write("<script src='https:\\//code.jquery.com\/ui\/1.11.1\/jquery-ui.min.js'><\/script>");
+		document.write("<script src='JS-AUTO\/hamburger.js'><\/script>");
+
+
+
+
+<script type="text/javascript">	    
+	var scrWidth = window.innerWidth;  
+	if(scrWidth <= 750){
+		document.write("<script src='JS-AUTO\/hamburger.js'><\/script>");
+
+	}
+	
+</script>
